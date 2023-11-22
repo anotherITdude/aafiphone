@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <Container>
       <Navbar />
-      <Hero title="AAF Iphone" />
+      <Hero title="AAF Iphone AR" />
       <Hero title="Section 2" />
       <Hero title="Section 3" />
       <Hero title="Section 4" />
