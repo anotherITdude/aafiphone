@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <Container>
       <Navbar />
-      <Hero title="Hero Section" />
+      <Hero title="AAF Iphone EN" />
       <Hero title="Section 2" />
       <Hero title="Section 3" />
       <Hero title="Section 4" />
