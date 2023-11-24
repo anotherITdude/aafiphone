@@ -1,5 +1,3 @@
-import Image from "@/node_modules/next/image";
-import Logo from "../public/logo.svg";
 import Container from "@/components/Container";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
