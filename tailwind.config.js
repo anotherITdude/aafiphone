@@ -18,7 +18,9 @@ module.exports = {
     colors: {
       webBlue: "#052C6F",
       webWhite: "#ffffff",
-      webRed: "#E2211C"
+      webRed: "#E2211C",
+      webGray: "#3F4040",
+      webLiteGray: "#717171"
     },
     fontFamily: {
       "DINCondensed-Bold": ["DINCondensed-Bold"],
@@ -32,6 +34,7 @@ module.exports = {
       "DINArabic-CondBold": ["DINArabic-CondBold"],
       "helvetica-neue-lt-arabic-75-bol": ["helvetica-neue-lt-arabic-75-bol"],
       "HelveticaNeueLTArabic-Roman": ["HelveticaNeueLTArabic-Roman"],
+      "DIN-DemiBold": ["DIN-DemiBold"]
 
     },
     extend: {
