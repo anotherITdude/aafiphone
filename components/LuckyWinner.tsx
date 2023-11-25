@@ -1,8 +1,8 @@
-'use client'
+"use client";
 import React from "react";
 import Button from "./Button";
 import Section from "./Section";
-import { motion } from 'framer-motion'
+import { motion } from "framer-motion";
 const LuckyWinner = () => {
   const motionSettings = {
     initial: { opacity: 0, y: -20 },
@@ -13,7 +13,7 @@ const LuckyWinner = () => {
   const motionSettingsh3 = {
     initial: { opacity: 0, y: -20 },
     whileInView: { opacity: 1, y: 0 },
-    transition: { duration: 1},
+    transition: { duration: 1 },
   };
 
   const motionSettingsh2 = {
