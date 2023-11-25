@@ -28,8 +28,12 @@ module.exports = {
         // ...
         animation: ["responsive", "motion-safe", "motion-reduce"],
       },
+      colors: {
+        webBlue: "#052C6F",
+        webWhite: "#ffffff",
+      },
       fontFamily: {
-        "din": ["din"],
+        "DINCondensed-Bold": ["DINCondensed-Bold"],
         "gotham-black-italic": ["gotham-black-italic"],
         "neosans-bold": ["neosans-bold"],
         "neosans-medium": ["neosans-medium"],

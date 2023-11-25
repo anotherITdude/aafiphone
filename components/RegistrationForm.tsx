@@ -94,7 +94,7 @@ const RegistrationForm = () => {
             <div className="form-field ">
               <Input
                 id="name"
-                label="NAME"
+                label="Name"
                 disabled={isLoading}
                 register={register}
                 errors={errors}
@@ -105,7 +105,7 @@ const RegistrationForm = () => {
             <div className="form-field">
               <Input
                 id="mobile"
-                label="MOBILE NUMBER"
+                label="Mobile Number"
                 disabled={isLoading}
                 register={register}
                 errors={errors}
@@ -115,7 +115,7 @@ const RegistrationForm = () => {
             <div className="form-field">
               <Input
                 id="email"
-                label="EMAIL"
+                label="Email"
                 disabled={isLoading}
                 register={register}
                 errors={errors}
@@ -125,7 +125,7 @@ const RegistrationForm = () => {
             <div className="form-field">
               <Input
                 id="emirate"
-                label="EMIRATE"
+                label="Emirate"
                 disabled={isLoading}
                 register={register}
                 errors={errors}
@@ -135,7 +135,7 @@ const RegistrationForm = () => {
             <div className="form-field">
               <Input
                 id="eid"
-                label="EMIRATES ID NUMBER"
+                label="Emirate ID Number"
                 disabled={isLoading}
                 register={register}
                 errors={errors}
@@ -145,7 +145,7 @@ const RegistrationForm = () => {
             <div className="form-field">
               <Input
                 id="receipt"
-                label="UPLOAD PURCHASE RECIEPT"
+                label="Upload purchase receipt"
                 disabled={isLoading}
                 register={register}
                 errors={errors}

@@ -42,12 +42,12 @@ const Input: React.FC<InputProps> = ({
           w-full
           pb-3
           pt-6 
-          font-din
+          font-DINCondensed-Bold
           text-sm
           bg-white 
           border-b-2
           rounded-none
-          capitalize
+          
           outline-none
           transition
           disabled:opacity-70
@@ -59,11 +59,12 @@ const Input: React.FC<InputProps> = ({
       <label
         className={`
           absolute 
-          text-sm
+          text-lg
           duration-150 
           transform
           -translate-y-3 
-          font-din
+          font-DINCondensed-Bold
+          tracking-widest
           top-5 
           z-10 
           origin-[0] 
