@@ -21,18 +21,17 @@ module.exports = {
     },
     fontFamily: {
       "DINCondensed-Bold": ["DINCondensed-Bold"],
+      "DIN-Bold": ["DIN-Bold"],
       "gotham-black-italic": ["gotham-black-italic"],
       "neosans-bold": ["neosans-bold"],
       "neosans-medium": ["neosans-medium"],
-      // "neosans-regular": ["neosans-regular"],
-      // primetime: ["primetime"],
-      // circularStd: ["circularStd"],
-      // "almarai-bold": ["almarai-bold"],
-      // "almarai-extrabold": ["almarai-extrabold"],
-      // "almarai-regular": ["almarai-regular"],
-      // "helvetica-neue-lt-arabic-75-bold": [
-      //   "helvetica-neue-lt-arabic-75-bold",
-      // ],
+      "DINArabic-Black": ["DINArabic-Black"],
+      "DINArabic-CondBlack": ["DINArabic-CondBlack"],
+      "circularStd": ["circularStd"],
+      "DINArabic-CondBold": ["DINArabic-CondBold"],
+      "helvetica-neue-lt-arabic-75-bol": ["helvetica-neue-lt-arabic-75-bol"],
+      "HelveticaNeueLTArabic-Roman": ["HelveticaNeueLTArabic-Roman"],
+
     },
     extend: {
       colors: {

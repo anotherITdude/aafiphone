@@ -1,6 +1,5 @@
 import React from "react";
 import Section from "./Section";
-import hero from "@/public/f_hero_right.png";
 import Navbar from "./Navbar";
 
 interface HeroInterface {

@@ -51,14 +51,13 @@ const Navbar = () => {
           <select
             className="pt-3 pb-2 pr-3 
             bg-webWhite/20 pl-0 w-[150px] 
-            border-b-[0.5px] border-webWhite text-xl text-webWhite
-            font-DINCondensed-Bold tracking-[1px] outline-none"
+            border-b-[0.5px] border-webWhite text-md text-webWhite
+            font-DIN-Bold outline-none"
             value={selectedLanguage}
             onChange={handleLanguageChange}
           >
             {locales.map((lang) => (
               <option className="" key={lang} value={lang}>
-                <span className=""></span>
                 {lang === "ar" ? "Arabic" : "English"}
               </option>
             ))}
@@ -80,5 +79,4 @@ const Navbar = () => {
   );
 };
 
-// Export the Navbar component
 export default Navbar;

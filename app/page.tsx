@@ -1,6 +1,6 @@
 import Container from "@/components/Container";
 import Hero from "@/components/Hero";
-import Navbar from "@/components/Navbar";
+import LuckyWinner from "@/components/LuckyWinner";
 import RegisterSection from "@/components/RegisterSection";
 
 export default function Home() {
@@ -8,6 +8,7 @@ export default function Home() {
     <Container>
       {/* <Navbar /> */}
       <Hero title="AAF Iphone EN" />
+      <LuckyWinner />
       {/* <Hero title="Section 2" />
       <Hero title="Section 3" />
       <Hero title="Section 4" /> */}
