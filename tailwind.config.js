@@ -18,6 +18,7 @@ module.exports = {
     colors: {
       webBlue: "#052C6F",
       webWhite: "#ffffff",
+      webRed: "#E2211C"
     },
     fontFamily: {
       "DINCondensed-Bold": ["DINCondensed-Bold"],
