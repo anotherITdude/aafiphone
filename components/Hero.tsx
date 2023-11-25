@@ -1,22 +1,24 @@
 import React from "react";
 import Section from "./Section";
+import hero from "@/public/f_hero_right.png";
+import Navbar from "./Navbar";
 
 interface HeroInterface {
   title?: string;
 }
 const Hero: React.FC<HeroInterface> = ({ title }) => {
   return (
-    <Section>
-      <p className="text-center pb-4 text-2xl">{title}</p>
-      <div className="flex flex-col md:flex-row justify-evenly ">
-        <div className="flex w-full bg-red-200 text-center justify-center items-center min-h-[400px]">
-          Left
-        </div>
-        <div className="flex w-full bg-purple-300 items-center justify-center min-h-[400px]">
-          Right
-        </div>
+    <div>
+      <div
+        className="hero 
+    bg-left bg-cover bg-no-repeat
+    h-[619px] 
+    md:bg-cover md:h-[495px] lg:h-[591px]
+    flex flex-col overflow-hidden"
+      >
+        <Navbar />
       </div>
-    </Section>
+    </div>
   );
 };
 

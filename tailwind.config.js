@@ -15,6 +15,25 @@ module.exports = {
         "2xl": "1400px",
       },
     },
+    colors: {
+      webBlue: "#052C6F",
+      webWhite: "#ffffff",
+    },
+    fontFamily: {
+      "DINCondensed-Bold": ["DINCondensed-Bold"],
+      "gotham-black-italic": ["gotham-black-italic"],
+      "neosans-bold": ["neosans-bold"],
+      "neosans-medium": ["neosans-medium"],
+      // "neosans-regular": ["neosans-regular"],
+      // primetime: ["primetime"],
+      // circularStd: ["circularStd"],
+      // "almarai-bold": ["almarai-bold"],
+      // "almarai-extrabold": ["almarai-extrabold"],
+      // "almarai-regular": ["almarai-regular"],
+      // "helvetica-neue-lt-arabic-75-bold": [
+      //   "helvetica-neue-lt-arabic-75-bold",
+      // ],
+    },
     extend: {
       colors: {
         border: "hsl(var(--border))",

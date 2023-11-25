@@ -11,11 +11,11 @@ const Container: React.FC<ContainerProps> = ({ children }) => {
   return (
     <div
       dir={`${locale === "/ar" ? "rtl" : "ltr"}`}
-      className=" max-w-full
+      className=" max-w-full min-h-screen
        lg:max-w-[1100px]
         mx-auto
         rounded-sm
-        bg-gray-100"
+        bg-webWhite"
     >
       {children}
     </div>

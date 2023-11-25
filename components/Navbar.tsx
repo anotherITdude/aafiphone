@@ -1,16 +1,44 @@
 "use client";
-
 import Link from "next/link";
-import React from "react";
+import React, { ChangeEvent, useEffect, useState } from "react";
 import Image from "next/image";
 import logo from "../public/logo.svg";
 import { motion } from "framer-motion";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 
+type RouteToLanguage = { [key: string]: string };
+
+// Define the Navbar component
 const Navbar = () => {
+  // Retrieve current locale and supported locales
   const locale = usePathname();
-  const locales = ["en", "ar"]; // Add other supported locales here
+  const locales = ["en", "ar"];
+  const router = useRouter();
 
+  // Define state to track selected language
+  const [selectedLanguage, setSelectedLanguage] = useState(locale);
+
+  // Function to handle language change
+  const handleLanguageChange = (event: ChangeEvent<HTMLSelectElement>) => {
+    const lang = event.target.value;
+    setSelectedLanguage(lang);
+    const route = lang === "ar" ? "/ar" : "/";
+    router.push(route);
+  };
+
+  // Effect to update selectedLanguage based on the route
+  useEffect(() => {
+    // Map the route to the corresponding language
+    const routeToLanguage: RouteToLanguage = {
+      "/": "en",
+      "/ar": "ar",
+    };
+
+    // Set the selectedLanguage based on the current route
+    setSelectedLanguage(routeToLanguage[locale] || "en");
+  }, [locale]);
+
+  // Return JSX for the Navbar component
   return (
     <motion.nav className="flex justify-between pl-4">
       <motion.div
@@ -20,26 +48,24 @@ const Navbar = () => {
         className="font-neosans-medium uppercase flex justify-center items-center gap-[3px]"
       >
         <div className={`${locale === "/ar" ? "pr-4" : ""}`}>
-          {locales.map((lang, index) => (
-            <React.Fragment key={lang}>
-              <Link
-                href={lang === "en" ? "/" : `/${lang}`}
-                className={`${
-                  locale === `/${lang}` || (locale === "/" && lang === "en")
-                    ? "text-gray-500 cursor-not-allowed"
-                    : "text-red-800 cursor-pointer"
-                }`}
-              >
-                {lang === "ar" ? "Ar" : "En"}
-              </Link>
-              {index !== locales.length - 1 && (
-                <span className="border-r-2 border-blue-600 mx-2"></span>
-              )}
-            </React.Fragment>
-          ))}
+          <select
+            className="pt-3 pb-2 pr-3 
+            bg-webWhite/20 pl-0 w-[150px] 
+            border-b-[0.5px] border-webWhite text-xl text-webWhite
+            font-DINCondensed-Bold tracking-[1px] outline-none"
+            value={selectedLanguage}
+            onChange={handleLanguageChange}
+          >
+            {locales.map((lang) => (
+              <option className="" key={lang} value={lang}>
+                <span className=""></span>
+                {lang === "ar" ? "Arabic" : "English"}
+              </option>
+            ))}
+          </select>
         </div>
       </motion.div>
-      <motion.div className="pt-4 pr-4">
+      <motion.div className="pt-4 pr-4 ">
         <Link href="/">
           <Image
             quality={100}
@@ -54,4 +80,5 @@ const Navbar = () => {
   );
 };
 
+// Export the Navbar component
 export default Navbar;
