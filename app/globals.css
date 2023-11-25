@@ -65,6 +65,77 @@
     --ring: 0 0% 83.1%;
   }
 }
+
+@font-face {
+  font-family: "gotham-bold";
+  src: url("../Fonts/Gotham-Bold_6.otf");
+}
+
+@font-face {
+  font-family: "gotham-book";
+  src: url("../Fonts/Gotham-Book_C.otf");
+}
+
+@font-face {
+  font-family: "gotham-black";
+  src: url("../Fonts/Gotham-Black_1.otf");
+}
+
+@font-face {
+  font-family: "din";
+  src: url("../Fonts/DINCondensed-Bold.ttf");
+}
+
+@font-face {
+  font-family: "ostrichSans";
+  src: url("../Fonts/OstrichSans-Heavy.otf");
+}
+
+
+/* @font-face {
+  font-family: "neosans-bold";
+  src: url("../Fonts/Neo\ Sans\ Std\ Bold.otf");
+}
+
+@font-face {
+  font-family: "neosans-medium";
+  src: url("../Fonts/Neo\ Sans\ Std\ Medium.otf");
+}
+
+@font-face {
+  font-family: "neosans-regular";
+  src: url("../Fonts/Neo\ Sans\ Std\ Regular.otf");
+}
+
+@font-face {
+  font-family: "primetime";
+  src: url("../Fonts/PRIMETIME.ttf");
+}
+
+@font-face {
+  font-family: "circularStd";
+  src: url('../Fonts/CircularStd-Black.ttf')
+}
+
+@font-face {
+  font-family: "almarai-bold";
+  src: url('../Fonts/Almarai-Bold.ttf')
+}
+
+@font-face {
+  font-family: "almarai-regular";
+  src: url("../Fonts/Almarai-Regular.ttf")
+}
+
+@font-face {
+  font-family: "almarai-extrabold";
+  src: url('../Fonts/Almarai-ExtraBold.ttf')
+}
+
+@font-face {
+  font-family: "helvetica-neue-lt-arabic-75-bold";
+  src: url('../Fonts/helvetica-neue-lt-arabic-75-bold.ttf')
+} */
  
 @layer base {
   * {
