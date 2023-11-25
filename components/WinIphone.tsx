@@ -39,7 +39,9 @@ const WinIphone = () => {
                 className="left flex  justify-items-start  text-webRed
               text-[180px] md:text-[190px] "
               >
-                <p className="-mt-[80px] align-top tracking-tighter">10</p>
+                <p className="-mt-[80px] align-top tracking-tighter textShadow">
+                  10
+                </p>
               </motion.div>
               <div
                 className="right flex flex-col  text-webBlue pl-4
