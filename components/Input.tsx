@@ -1,6 +1,9 @@
 "use client";
 import { RefObject } from "react";
 import { FieldErrors, FieldValues, UseFormRegister } from "react-hook-form";
+import en from "../locales/en";
+import ar from "../locales/ar";
+import { usePathname } from "next/navigation";
 
 interface InputProps {
   id: string;
@@ -23,6 +26,8 @@ const Input: React.FC<InputProps> = ({
   required,
   errors,
 }) => {
+  const locale = usePathname();
+  const t = locale === "/" ? en : ar;
   return (
     <div className="w-full relative">
       <input
@@ -62,16 +67,22 @@ const Input: React.FC<InputProps> = ({
         htmlFor={id}
         className={`
           absolute 
-          text-lg
+          
+          ${locale === "/" ? "text-lg" : "text-sm "}
           duration-150 
           transform
           -translate-y-3 
-          font-DINCondensed-Bold
+          ${
+            locale === "/"
+              ? "font-DINCondensed-Bold"
+              : "font-helvetica-neue-lt-arabic-75-bol"
+          }
           tracking-widest
           top-4 
           z-10 
           origin-[0] 
-          left-0
+
+          ${locale === "/" ? "left-0" : "right-0"}
           peer-placeholder-shown:scale-100 
           peer-placeholder-shown:translate-y-0 
           peer-focus:scale-75

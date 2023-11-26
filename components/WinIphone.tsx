@@ -3,6 +3,10 @@ import React from "react";
 import Button from "./Button";
 import Section from "./Section";
 import { motion } from "framer-motion";
+import en from "../locales/en";
+import ar from "../locales/ar";
+import { usePathname } from "next/navigation";
+
 const WinIphone = () => {
   const motionSettings = {
     initial: { opacity: 0, x: 15 },
@@ -21,6 +25,9 @@ const WinIphone = () => {
     whileInView: { opacity: 1, x: 0 },
     transition: { duration: 1.5 },
   };
+
+  const locale = usePathname();
+  const t = locale === "/" ? en : ar;
 
   return (
     <div>
@@ -57,7 +64,7 @@ const WinIphone = () => {
                 </motion.div>
                 <div className="flex mt-2">
                   <motion.a {...motionSettingsButton} href="#register">
-                    <Button label="Register Now" small outline arrow />
+                    <Button label={t.register_now} small outline arrow />
                   </motion.a>
                 </div>
               </div>

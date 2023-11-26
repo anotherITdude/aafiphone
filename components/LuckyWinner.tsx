@@ -3,6 +3,10 @@ import React from "react";
 import Button from "./Button";
 import Section from "./Section";
 import { motion } from "framer-motion";
+import en from "../locales/en";
+import ar from "../locales/ar";
+import { usePathname } from "next/navigation";
+
 const LuckyWinner = () => {
   const motionSettings = {
     initial: { opacity: 0, y: -20 },
@@ -27,6 +31,8 @@ const LuckyWinner = () => {
     whileInView: { opacity: 1, x: 0 },
     transition: { duration: 2 },
   };
+  const locale = usePathname();
+  const t = locale === "/" ? en : ar;
 
   return (
     <div>
@@ -38,24 +44,25 @@ const LuckyWinner = () => {
     flex flex-col overflow-hidden"
       >
         <Section className="relative">
-          <div className="flex flex-col justify-center items-center  mt-[23%] font-DIN-Bold text-webBlue text-center">
+          <div
+            className={`flex flex-col justify-center items-center  mt-[23%]  text-webBlue text-center
+         ${locale === "/" ? "font-DIN-Bold" : "font-DINArabic-Black"}`}
+          >
             <motion.h1 {...motionSettings} className=" text-5xl text-center">
-              BUY, SAVOR AND <br />
-              BE OUR LUCKY WINNER!
+              {t.buy_and_savor}
+              <br />
+              {t.be_our_lucky_winner}
             </motion.h1>
             <motion.h3 {...motionSettingsh3} className=" pt-3 pb-2 text-md">
-              Celebrate National Day with Al Ain Farms and seize the chance to
-              win big!
+              {t.celebrate_national_day}
             </motion.h3>
             <motion.h2 {...motionSettingsh2} className="pb-6 text-xs ">
-              Take home your favourite products at your nearest Lulu Store{" "}
-              <br className="block md:hidden" />
-              and unwrap the excitement
-              <br className="hidden md:block" /> of winning the Brand-New iPhone
-              15 PRO MAX!
+              {t.take_home_your_favourite}
+              <br className="hidden md:block" />
+              {t.of_winning_the_brand_new_iphone}
             </motion.h2>
             <motion.a {...motionSettingsButton} href="#register">
-              <Button label="Register Now" small outline arrow />
+              <Button label={t.register_now} small outline arrow />
             </motion.a>
           </div>
         </Section>

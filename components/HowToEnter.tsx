@@ -1,24 +1,40 @@
-'use client'
-import React from 'react'
-import Section from './Section'
+"use client";
+import React from "react";
+import Section from "./Section";
 import howto_right from "./../public/howtoenter.png";
-import Image from 'next/image';
-import { motion } from 'framer-motion';
+import Image from "next/image";
+import { motion } from "framer-motion";
+
+import en from "../locales/en";
+import ar from "../locales/ar";
+import { usePathname } from "next/navigation";
 
 const HowToEnter = () => {
-
   const motionSettingsh2 = {
     initial: { opacity: 0, y: -15 },
     whileInView: { opacity: 1, y: 0 },
     transition: { duration: 1 },
   };
 
-  const motionSettingsImage= {
-    initial: { opacity: 0, },
-    whileInView: { opacity: 1, },
+  const motionSettingsImage = {
+    initial: { opacity: 0 },
+    whileInView: { opacity: 1 },
     transition: { duration: 2 },
   };
 
+  const locale = usePathname();
+  const t = locale === "/" ? en : ar;
+  const how_to_title =
+    locale === "/"
+      ? "howtocard_title font-DIN-Bold"
+      : "howtocard_title font-HelveticaNeueLTArabic-Roman pt-0";
+  
+  const how_to_card =
+    locale === "/"
+      ? "howtocard font-DIN-Bold"
+      : "howtocard font-HelveticaNeueLTArabic-Roman";
+  
+  
   return (
     <div
       className="howtoenter
@@ -36,35 +52,42 @@ const HowToEnter = () => {
           <div className="flex h-[619px] justify-center items-center md:pl-16 ">
             <motion.div
               {...motionSettingsh2}
-              className="text-3xl md:text-5xl  lg:text-6xl text-webBlue font-DIN-Bold"
+              className="text-3xl md:text-5xl  lg:text-6xl text-webBlue"
             >
-              How to Enter
+              <div
+                className={`${
+                  locale === "/" ? "font-DIN-Bold" : "font-DINArabic-Black"
+                }`}
+              >
+                {t.How_to_enter}
+              </div>
               <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6 gap-y-8 ">
-                <div className="howtocard">
-                  <div className="howtocard_title">STEP 1</div>
-                  Purchase Al Ain Farms FRESH CHICKEN, FRESH MILK, LONG LIFE
-                  MILK, FRUIT MIX, FRESH EGGS, or FRESH YOGURT that have
-                  promotional QR Code on them.
+                <div className={how_to_card}>
+                  <div className={how_to_title}>{t.step_1}</div>
+                  {t.step_1_content}
                 </div>
-                <div className="howtocard">
-                  <div className="howtocard_title">STEP 2</div>
-                  Scan the QR Code using your Smartphone or Tablet.
+                <div className={how_to_card}>
+                  <div className={how_to_title}>{t.step_2}</div>
+                  {t.step_2_content}
                 </div>
-                <div className="howtocard">
-                  <div className="howtocard_title">STEP 3</div>
-                  Register on the microsite after scanning the QR Code & upload
-                  the Purchase Receipt.
+                <div className={how_to_card}>
+                  <div className={how_to_title}>{t.step_3}</div>
+                  {t.step_3_content}
                 </div>
-                <div className="howtocard">
-                  <div className="howtocard_title">STEP 4</div>
-                  Submit your entry to enter the draw.
+                <div className={how_to_card}>
+                  <div className={how_to_title}>{t.step_4}</div>
+                  {t.step_4_content}
                 </div>
               </div>
-              <div className="text-xs mt-8 text-webGray leading-6">
-                * This promotion is valid on select Al Ain Farms products.
-                Products include: Fresh Chicken, Fresh Milk, Long Life Milk,
-                Fruit Mix, Fresh Eggs, or Fresh Yoghurt. Head to your nearest
-                Lulu stores to participate!
+              <div
+                className={`text-xs mt-8 text-webGray leading-6
+              ${
+                locale === "/"
+                  ? "font-DIN-Bold"
+                  : "font-HelveticaNeueLTArabic-Roman"
+              }`}
+              >
+                {t.disclaimer}
               </div>
             </motion.div>
           </div>
@@ -78,6 +101,6 @@ const HowToEnter = () => {
       </Section>
     </div>
   );
-}
+};
 
-export default HowToEnter
+export default HowToEnter;
