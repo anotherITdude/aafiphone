@@ -1,4 +1,5 @@
 "use client";
+import { usePathname } from "next/navigation";
 import React from "react";
 
 interface ButtonProps {
@@ -18,6 +19,44 @@ const Button: React.FC<ButtonProps> = ({
   small,
   arrow
 }) => {
+  const locale = usePathname();
+  const arrowSign = () => {
+    if (locale === '/') {
+      return (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="3.5"
+          stroke="currentColor"
+          className="w-3 h-3 group-hover:translate-x-1 transition"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+          />
+        </svg>
+      );
+    } else {
+      return (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth={3.5}
+          stroke="currentColor"
+          className="w-3 h-3 group-hover:-translate-x-1 transition"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M10.5 4.5L3 12m0 0l7.5 7.5M3 12h18"
+          />
+        </svg>
+      );
+    }
+  }
   return (
     <button
       onClick={onClick}
@@ -32,9 +71,8 @@ const Button: React.FC<ButtonProps> = ({
     transition
     w-[150px]
     float-right
-    font-DIN-Bold
     
-    
+    ${locale === "/" ? "font-DIN-Bold" : "font-DINArabic-Black"}
     ${outline ? "bg-white" : "bg-webBlue pt-2 pb-2"}
     ${outline ? "border-black" : "border-webBlue"}
     ${outline ? "text-webBlue" : "text-webWhite"}
@@ -46,22 +84,7 @@ const Button: React.FC<ButtonProps> = ({
     >
       <span className="flex justify-evenly items-center">
         {label}
-        {arrow && (
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="3.5"
-            stroke="currentColor"
-            className="w-3 h-3 group-hover:translate-x-1 transition"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
-            />
-          </svg>
-        )}
+        {arrow && arrowSign()}
       </span>
     </button>
   );
