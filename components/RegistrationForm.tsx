@@ -103,8 +103,8 @@ const RegistrationForm = () => {
             className={` text-webBlue
           ${
             locale === "/"
-              ? "font-DIN-Bold text-md md:text-5xl pl-4"
-              : "font-DINArabic-Black text-md md:text-6xl pr-4"
+              ? "font-DIN-Bold text-5xl md:text-5xl pl-4"
+              : "font-DINArabic-Black text-5xl md:text-6xl pr-4"
           }
           `}
           >
