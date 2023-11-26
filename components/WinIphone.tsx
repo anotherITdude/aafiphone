@@ -39,7 +39,10 @@ const WinIphone = () => {
     flex flex-col overflow-hidden"
       >
         <Section className="">
-          <div className="flex flex-col items-center  font-DIN-Bold mt-10 md:mt-6">
+          <div
+            className={`flex flex-col items-center  mt-10 md:mt-6
+            ${locale === "/" ? "font-DIN-Bold " : "font-DINArabic-Black"}`}
+          >
             <div className="flex h-[200px] -ml-8 md:ml-0 ">
               <motion.div
                 {...motionSettings}
@@ -59,10 +62,10 @@ const WinIphone = () => {
                   {...motionSettingsh2}
                   className="text-3xl md:text-5xl  "
                 >
-                  Win iPhone <br />
-                  15PRO MAX
+                  <div className="mb-1">{t.win_iphone} </div>
+                 <div>{t.pro_15_max}</div>
                 </motion.div>
-                <div className="flex mt-2">
+                <div className={`flex ${locale === "/" ? "mt-2" : "mt-4"}`}>
                   <motion.a {...motionSettingsButton} href="#register">
                     <Button label={t.register_now} small outline arrow />
                   </motion.a>

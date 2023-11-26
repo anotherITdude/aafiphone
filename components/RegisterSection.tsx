@@ -5,6 +5,10 @@ import Section from "./Section";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import lulu_logo from "../public/lulu_logo.png";
+import en from "../locales/en";
+import ar from "../locales/ar";
+import { usePathname } from "next/navigation";
+
 interface RegisterSectionInterface {
   title?: string;
 }
@@ -29,6 +33,10 @@ const RegisterSection: React.FC<RegisterSectionInterface> = ({
     whileInView: { opacity: 1, x: 0 },
     transition: { duration: 1.5 },
   };
+
+  const locale = usePathname();
+  const t = locale === "/" ? en : ar;
+
   return (
     <div id="register">
       <div className="flex flex-col md:flex-row justify-evenly ">
@@ -54,14 +62,32 @@ const RegisterSection: React.FC<RegisterSectionInterface> = ({
                 </motion.div>
                 <motion.div
                   {...motionSettingsh2}
-                  className="text-3xl md:text-3xl text-webBlue font-DIN-Bold -mt-10"
+                  className={`text-3xl md:text-3xl text-webBlue -mt-10
+                  ${locale === "/" ? "font-DIN-Bold" : "font-DINArabic-Black"}
+                  `}
                 >
-                  Win iPhone <br />
-                  15PRO MAX
+                  {t.win_iphone} <br />
+                  {t.pro_15_max}
                 </motion.div>
-                <div className="mt-8 mb-8 md:ml-[7%] lg:ml-[18%] flex relative">
+                <div
+                  className={`mt-8 mb-8  flex relative
+                  ${
+                    locale === "/"
+                      ? "md:ml-[7%] lg:ml-[18%]"
+                      : "md:ml-[0%] lg:ml-[0%]"
+                  }`}
+                >
                   <hr className="text-webBlue w-[90%]" />
-                  <div className="onlyAt font-DIN-Bold">ONLY AT</div>
+                  <div
+                    className={`onlyAt
+                  ${
+                    locale === "/"
+                      ? "font-DIN-Bold"
+                      : "font-DINArabic-Black onlyAt_ar"
+                  }`}
+                  >
+                    {t.only_at}
+                  </div>
                 </div>
                 <div className="flex mt-0 justify-center items-center">
                   <Image width={180} alt="lulu logo" src={lulu_logo} />
