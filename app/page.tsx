@@ -4,15 +4,16 @@ import HowToEnter from "@/components/HowToEnter";
 import LuckyWinner from "@/components/LuckyWinner";
 import RegisterSection from "@/components/RegisterSection";
 import WinIphone from "@/components/WinIphone";
-
+import Terms from "@/components/Terms";
 export default function Home() {
   return (
     <Container>
-      <Hero title="AAF Iphone EN" />
+      <Hero />
       <LuckyWinner />
       <WinIphone />
       <HowToEnter />
-      <RegisterSection title="" />
+      <RegisterSection />
+      <Terms />
     </Container>
   );
 }
