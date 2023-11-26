@@ -93,7 +93,9 @@ const HowToEnter = () => {
           </div>
           <motion.div
             {...motionSettingsImage}
-            className="w-[300px] md:min-w-[500px] mt-6 md:mt-0 "
+            className={`w-[400px] md:min-w-[500px] mt-6 md:mt-0 
+            ${locale === "/" ? "mr-6" : "ml-2"}
+            `}
           >
             <Image alt="how to enter" src={howto_right} />
           </motion.div>
