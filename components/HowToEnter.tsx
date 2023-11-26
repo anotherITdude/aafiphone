@@ -55,8 +55,11 @@ const HowToEnter = () => {
               className="text-3xl md:text-5xl  lg:text-6xl text-webBlue"
             >
               <div
-                className={`${
-                  locale === "/" ? "font-DIN-Bold" : "font-DINArabic-Black"
+                className={`
+                ${
+                  locale === "/"
+                    ? "font-DIN-Bold text-5xl md:text-5xl pl-0"
+                    : "font-DINArabic-Black text-5xl md:text-6xl pr-4 mt-10 mb-10 md:mt-0"
                 }`}
               >
                 {t.How_to_enter}
