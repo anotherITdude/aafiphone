@@ -45,7 +45,7 @@ const translations = {
   'submission_completed': 'Your submission is completed...',
   'upload_error_message': 'Something went wrong please try again',
   //Terms and conditions
-  'terms_heading': 'Terms and Conditions',
+  'terms_heading': '*Terms and Conditions',
   'terms1': '1. The competition is open only to UAE residents above 18 years of age with a valid Emirates ID.',
   'terms2': '2. To enter the promotion, participants have to purchase Al Ain Farms Fresh Chicken, Fresh Milk, Long Life Milk, Fruit Mix, Fresh Eggs, or Fresh Yoghurt that have promotional QR code on them.',
   'terms3': '3. On the landing page, participants have to enter their name, email, mobile number, Emirate, Emirates ID number and upload a clear photo of the purchase receipt which shows the date and the Al Ain Farms product.',
