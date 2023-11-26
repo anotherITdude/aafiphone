@@ -4,7 +4,9 @@ const translations = {
   'celebrate_national_day': 'احتفل باليوم الوطني مع مزارع العين واغتنم فرصة الفوز بجوائز قيمة!',
   'take_home_your_favourite': 'اشتري منتجاتك المفضلة من أقرب فرع لولو هايبر ماركت واستمتع بالمتعة والتشويق  ',
   'of_winning_the_brand_new_iphone': 'لإمكانية الفوز بهاتف ايفون 15 برو ماكس ',
-  'register_now': 'سجل الآن'
+  'register_now': 'سجل الآن',
+  'win_iphone': 'Win iPhone',
+  '15_pro_max': '15PRO MAX'
 
 };
 
