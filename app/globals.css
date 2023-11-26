@@ -108,4 +108,19 @@ body {
   .textShadow {
     text-shadow: rgba(226, 33, 28, 0.5) 5px 1px 10px;
   }
+
+  .registration_left {
+     background-image: url(./../public/registration_left.png);
+  }
+
+  .onlyAt {
+     background-image: url(./../public/onlyAt.png);
+  }
+
+
+  .onlyAt{
+     @apply pt-1 pb-1 w-[80px]    absolute
+    text-sm text-center text-webBlue
+    -top-[14px] left-10 rounded-full
+  }
 }
