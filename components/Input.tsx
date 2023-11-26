@@ -59,6 +59,7 @@ const Input: React.FC<InputProps> = ({
         `}
       />
       <label
+        htmlFor={id}
         className={`
           absolute 
           text-lg
