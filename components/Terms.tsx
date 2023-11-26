@@ -15,12 +15,14 @@ const Terms = () => {
     >
       <Section>
         <div
-          className="w-[90%] pl-20 "
+          className="w-[90%] pl-0 md:pl-20 "
           style={{ margin: "auto", marginTop: "5%" }}
         >
           <h1
             className={`  mb-4 ${
-              locale === "/" ? "font-DIN-Bold text-3xl" : "text-5xl font-DINArabic-Black"
+              locale === "/"
+                ? "font-DIN-Bold -ml-2 text-3xl md:text-4xl"
+                : "text-4xl  font-DINArabic-Black  md:text-5xl"
             }`}
           >
             {t.terms_heading}
@@ -29,8 +31,8 @@ const Terms = () => {
             className={`list-decimal mt-4
           ${
             locale === "/"
-              ? "font-DIN-DemiBold"
-              : "font-HelveticaNeueLTArabic-Roman"
+              ? "font-DIN-DemiBold text-sm md:text-lg pl-4"
+              : "font-HelveticaNeueLTArabic-Roman text-sm md:text-lg pr-4"
           }
           `}
           >

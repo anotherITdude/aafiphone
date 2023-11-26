@@ -46,11 +46,11 @@ const translations = {
   'upload_error_message': 'Something went wrong please try again',
   //Terms and conditions
   'terms_heading': '*Terms and Conditions',
-  'terms1': '1. The competition is open only to UAE residents above 18 years of age with a valid Emirates ID.',
-  'terms2': '2. To enter the promotion, participants have to purchase Al Ain Farms Fresh Chicken, Fresh Milk, Long Life Milk, Fruit Mix, Fresh Eggs, or Fresh Yoghurt that have promotional QR code on them.',
-  'terms3': '3. On the landing page, participants have to enter their name, email, mobile number, Emirate, Emirates ID number and upload a clear photo of the purchase receipt which shows the date and the Al Ain Farms product.',
-  'terms4': '4. Participants have to register only through the online link which is validated through scanning of the QR code on the product.',
-  'terms5': '5. The last date for submission is _____2023. Winners will be announced on _____2023 on the Al Ain Farms Social Media and individually contacted for prize collection.',
-  'terms6': '6. Selection of winners will be at the sole discretion of Al Ain Farms management and all decisions will be final and binding'
+  'terms1': 'The competition is open only to UAE residents above 18 years of age with a valid Emirates ID.',
+  'terms2': 'To enter the promotion, participants have to purchase Al Ain Farms Fresh Chicken, Fresh Milk, Long Life Milk, Fruit Mix, Fresh Eggs, or Fresh Yoghurt that have promotional QR code on them.',
+  'terms3': 'On the landing page, participants have to enter their name, email, mobile number, Emirate, Emirates ID number and upload a clear photo of the purchase receipt which shows the date and the Al Ain Farms product.',
+  'terms4': 'Participants have to register only through the online link which is validated through scanning of the QR code on the product.',
+  'terms5': 'The last date for submission is _____2023. Winners will be announced on _____2023 on the Al Ain Farms Social Media and individually contacted for prize collection.',
+  'terms6': 'Selection of winners will be at the sole discretion of Al Ain Farms management and all decisions will be final and binding'
 };
 export default translations;

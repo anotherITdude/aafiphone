@@ -49,7 +49,7 @@ const HowToEnter = () => {
         pt-10
         "
         >
-          <div className="flex h-[619px] justify-center items-center md:pl-16 ">
+          <div className="flex h-[619px] justify-center items-center pl-4 pr-4 md:pl-16 ">
             <motion.div
               {...motionSettingsh2}
               className="text-3xl md:text-5xl  lg:text-6xl text-webBlue"
