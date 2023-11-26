@@ -4,9 +4,7 @@ import React, { ChangeEvent, useRef } from "react";
 import Image from "next/image";
 import { useState } from "react";
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
-import form_right from "@/public/logo.svg";
 import Input from "./Input";
-import { motion } from "framer-motion";
 import toast from "react-hot-toast";
 
 import { schema } from "@/schemas/Validation";
@@ -21,9 +19,15 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 
+import en from "../locales/en";
+import ar from "../locales/ar";
+import { usePathname } from "next/navigation";
 
 const RegistrationForm = () => {
+  
   const [isLoading, setIsLoading] = useState(false);
+  const locale = usePathname();
+  const t = locale === "/" ? en : ar;
 
   const {
     register,
@@ -31,7 +35,7 @@ const RegistrationForm = () => {
     formState: { errors },
     reset,
   } = useForm<FieldValues>({
-    resolver: yupResolver(schema) as any, // Use 'as any' to handle type mismatch
+    resolver: yupResolver(schema(t)) as any, // Use 'as any' to handle type mismatch
 
     defaultValues: {
       name: "",
@@ -47,7 +51,7 @@ const RegistrationForm = () => {
   });
 
   const onSubmit: SubmitHandler<FieldValues> = async (data) => {
-    let toastStatus = toast.loading("Uploading data. Please wait...");
+    let toastStatus = toast.loading(t.uploading_data);
     try {
       setIsLoading(true);
       data.contentType = data.receipt[0].type;
@@ -67,36 +71,39 @@ const RegistrationForm = () => {
             body: formData,
           });
           if (uploadResponse.ok) {
-            console.log("Upload successful!");
+            console.log(t.upload_successfull);
           } else {
             console.log("S3 Upload Error:", uploadResponse);
             console.log("Upload failed.");
           }
 
           toast.dismiss(toastStatus);
-          toast.success("Your submission is completed...");
+          toast.success(t.submission_completed);
           reset();
         })
         .finally(() => {
           setIsLoading(false);
         });
     } catch (error) {
-      toast.error("Something went wrong please try again" + error);
+      toast.error(t.upload_error_message + error);
       toast.dismiss(toastStatus);
     }
   };
 
   return (
-    <div id="register" className="w-[70%] 
+    <div
+      id="register"
+      className="w-[70%] 
     pb-14 pt-10 md:pt-0 md:pb-0
-    md:mt-[10%]  justify-center items-center ">
+    md:mt-[10%]  justify-center items-center "
+    >
       <div className="">
         <div className="right">
           <form onSubmit={handleSubmit(onSubmit)} className="pl-4 pr-4 pt-2">
             <div className="form-field ">
               <Input
                 id="name"
-                label="Name"
+                label={t.name}
                 disabled={isLoading}
                 register={register}
                 errors={errors}
@@ -107,7 +114,7 @@ const RegistrationForm = () => {
             <div className="form-field">
               <Input
                 id="mobile"
-                label="Mobile Number"
+                label={t.mobile}
                 disabled={isLoading}
                 register={register}
                 errors={errors}
@@ -117,7 +124,7 @@ const RegistrationForm = () => {
             <div className="form-field">
               <Input
                 id="email"
-                label="Email"
+                label={t.email}
                 disabled={isLoading}
                 register={register}
                 errors={errors}
@@ -127,7 +134,7 @@ const RegistrationForm = () => {
             <div className="form-field">
               <Input
                 id="emirate"
-                label="Emirate"
+                label={t.emirate}
                 disabled={isLoading}
                 register={register}
                 errors={errors}
@@ -137,7 +144,7 @@ const RegistrationForm = () => {
             <div className="form-field">
               <Input
                 id="eid"
-                label="Emirate ID Number"
+                label={t.emirate_id_number}
                 disabled={isLoading}
                 register={register}
                 errors={errors}
@@ -147,23 +154,24 @@ const RegistrationForm = () => {
             <div className="form-field">
               <Input
                 id="receipt"
-                label="Upload purchase receipt"
+                label={t.upload_purchase_receipt}
                 disabled={isLoading}
                 register={register}
                 errors={errors}
                 type="file"
               />
               <div className="mt-2 ml-2 uppercase text-xs cursor-pointer text-[#002E6D] font-neosans-regular ">
-                ( maximum upload size : 2mb )
+                ( {t.max_upload_size} )
               </div>
             </div>
             <div
-              className={`form-field pt-4 ${isLoading ? "animate-pulse" : ""} float-left`}
+              className={`form-field pt-4 ${isLoading ? "animate-pulse" : ""}
+              ${locale === "/" ? "float-left" : "float-right"}`}
             >
               <Button
                 arrow
                 disabled={isLoading}
-                label={`${isLoading ? "Submitting form..." : "Register Now"}`}
+                label={`${isLoading ? t.form_submit_message : t.register_now}`}
               />
             </div>
           </form>
