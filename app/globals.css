@@ -124,6 +124,12 @@ body {
     -top-[14px] left-10 rounded-full
   }
 
+  .onlyAt_ar{
+     @apply pt-1 pb-1 w-[80px]    absolute
+    text-sm text-center text-webBlue
+    -top-[14px] left-20 rounded-full
+  }
+
   li{
     @apply mb-2
   }
