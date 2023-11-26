@@ -34,11 +34,12 @@ const Button: React.FC<ButtonProps> = ({
     float-right
     font-DIN-Bold
     
-    ${outline ? "bg-white" : "bg-webBlue"}
+    
+    ${outline ? "bg-white" : "bg-webBlue pt-2 pb-2"}
     ${outline ? "border-black" : "border-webBlue"}
-    ${outline ? "text-webBlue" : "text-white"}
+    ${outline ? "text-webBlue" : "text-webWhite"}
     ${small ? " py-3" : "py-1"}
-    ${small ? "text-sm text-webBlue" : "text-lg"}
+    ${small ? "text-sm text-webBlue" : "text-sm"}
     ${small ? "font-light" : "font-semibold"}
     ${small ? "border-[0.8px]" : "border-2"}
     `}

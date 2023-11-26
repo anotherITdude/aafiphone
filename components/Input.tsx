@@ -52,8 +52,10 @@ const Input: React.FC<InputProps> = ({
           transition
           disabled:opacity-70
           disabled:cursor-not-allowed
-          ${errors[id] ? "border-rose-500" : "border-[#052C6F]"}
-          ${errors[id] ? "focus:border-rose-500" : "focus:border-black"}
+          ${errors[id] ? "border-webRed" : "border-webBlue"}
+          ${errors[id] ? "focus:border-webRed" : "focus:border-black"}
+          ${type === "file" ? "mt-4" : ""}
+
         `}
       />
       <label
@@ -65,7 +67,7 @@ const Input: React.FC<InputProps> = ({
           -translate-y-3 
           font-DINCondensed-Bold
           tracking-widest
-          top-5 
+          top-4 
           z-10 
           origin-[0] 
           left-0
@@ -73,16 +75,17 @@ const Input: React.FC<InputProps> = ({
           peer-placeholder-shown:translate-y-0 
           peer-focus:scale-75
           peer-focus:-translate-y-4
-          ${errors[id] ? "text-rose-500" : "text-[#052C6F]"}
+          ${errors[id] ? "text-webRed" : "text-webBlue"}
+          ${type === "file" ? "top-4 mt-2" : ""}
         `}
       >
         {errors[id] ? (
-          <span className="uppercase text-xs">{errors[id]?.message}</span>
+          <span className="uppercase text-sm">{errors[id]?.message}</span>
         ) : (
           label
         )}
       </label>
-      <span className="text-xs ml-5 text-red-500 animate-pulse"></span>
+      <span className="text-sm ml-5 text-webRed animate-pulse"></span>
     </div>
   );
 };

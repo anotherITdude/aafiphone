@@ -87,7 +87,9 @@ const RegistrationForm = () => {
   };
 
   return (
-    <div id="register" className=" ">
+    <div id="register" className="w-[70%] 
+    pb-14 pt-10 md:pt-0 md:pb-0
+    md:mt-[10%]  justify-center items-center ">
       <div className="">
         <div className="right">
           <form onSubmit={handleSubmit(onSubmit)} className="pl-4 pr-4 pt-2">
@@ -156,11 +158,12 @@ const RegistrationForm = () => {
               </div>
             </div>
             <div
-              className={`form-field pt-4 ${isLoading ? "animate-pulse" : ""}`}
+              className={`form-field pt-4 ${isLoading ? "animate-pulse" : ""} float-left`}
             >
               <Button
+                arrow
                 disabled={isLoading}
-                label={`${isLoading ? "Submitting form..." : "Register Now ->"}`}
+                label={`${isLoading ? "Submitting form..." : "Register Now"}`}
               />
             </div>
           </form>
