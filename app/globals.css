@@ -123,4 +123,8 @@ body {
     text-sm text-center text-webBlue
     -top-[14px] left-10 rounded-full
   }
+  
+  li{
+    @apply mb-2
+  }
 }
