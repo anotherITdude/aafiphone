@@ -99,6 +99,17 @@ const RegistrationForm = () => {
     >
       <div className="">
         <div className="right">
+          <h2
+            className={` text-webBlue
+          ${
+            locale === "/"
+              ? "font-DIN-Bold text-md md:text-5xl pl-4"
+              : "font-DINArabic-Black text-md md:text-6xl pr-4"
+          }
+          `}
+          >
+            {t.registration}
+          </h2>
           <form onSubmit={handleSubmit(onSubmit)} className="pl-4 pr-4 pt-2">
             <div className="form-field ">
               <Input

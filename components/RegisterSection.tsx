@@ -47,7 +47,7 @@ const RegisterSection: React.FC<RegisterSectionInterface> = ({
           <div
             className="registration_left
     bg-right bg-cover bg-no-repeat
-    h-[590px] w-full"
+    h-[620px] w-full"
           >
             <Section>
               <div className="flex flex-col w-[45%] float-right">

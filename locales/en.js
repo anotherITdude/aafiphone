@@ -21,6 +21,7 @@ const translations = {
   'step_4_content': 'Submit your entry to enter the draw.',
   'disclaimer': '* This promotion is valid on select Al Ain Farms products. Products include: Fresh Chicken, Fresh Milk, Long Life Milk, Fruit Mix, Fresh Eggs, or Fresh Yoghurt. Head to your nearest Lulu stores to participate!',
   //Register Section
+  'registration': 'Registration',
   'only_at': 'ONLY AT',
   'name': 'Name',
   'name_error': 'Name is required',
