@@ -95,6 +95,9 @@ body {
   .winiphone {
     background-image: url(./../public/winiphone.png);
   }
+  .winiphone_mobile{
+    background-image: url(./../public/winiphone_mobile.png);
+  }
 
   .howtoenter {
     background-image: url(./../public/howtoenter_bg.svg);
