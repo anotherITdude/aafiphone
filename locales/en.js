@@ -1,6 +1,6 @@
 const translations = {
   //lucky Winner section
-  'buy_and_savor': 'BUY, SAVOR AND ',
+  'buy_and_savor': 'BUY, SAVOR &',
   'be_our_lucky_winner': 'BE OUR LUCKY WINNER!',
   'celebrate_national_day': 'Celebrate National Day with Al Ain Farms and seize the chance to win big!',
   'take_home_your_favourite': 'Take home your favourite products at your nearest Lulu Store and unwrap the excitement',

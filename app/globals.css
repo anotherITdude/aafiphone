@@ -87,6 +87,11 @@ body {
     background-image: url(./../public/luckywinner.png);
   }
 
+  .luckyWinner_mobile {
+    background-image: url(./../public/luckywinner_mobile.png);
+  }
+  
+
   .winiphone {
     background-image: url(./../public/winiphone.png);
   }
