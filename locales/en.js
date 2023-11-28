@@ -3,7 +3,7 @@ const translations = {
   'buy_and_savor': 'BUY, SAVOR &',
   'be_our_lucky_winner': 'BE OUR LUCKY WINNER!',
   'celebrate_national_day': 'Celebrate National Day with Al Ain Farms and seize the chance to win big!',
-  'take_home_your_favourite': 'Take home your favourite products at your nearest Lulu Store and unwrap the excitement',
+  'take_home_your_favourite': 'Take home your favourite products at your nearest Lulu Store and unwrap the excitement ',
   'of_winning_the_brand_new_iphone': 'of winning the Brand-New iPhone 15 PRO MAX!',
   'register_now': 'Register Now',
   //Win Iphone Section
@@ -15,7 +15,7 @@ const translations = {
   'step_2': 'STEP 2',
   'step_3': 'STEP 3',
   'step_4': 'STEP 4',
-  'step_1_content': 'Purchase Al Ain Farms FRESH CHICKEN, FRESH MILK, LONG LIFE MILK, JUICE, FRESH EGGS, or FRESH YOGURT that have promotional QR Code on them.',
+  'step_1_content': 'Purchase Al Ain Farms FRESH CHICKEN, FRESH MILK, LONG LIFE MILK, JUICE, FRESH EGGS, or FRESH YOGHURT that have promotional QR Code on them.',
   'step_2_content': 'Scan the QR Code using your Smartphone or Tablet.',
   'step_3_content': 'Register on the microsite after scanning the QR Code & upload the Purchase Receipt.',
   'step_4_content': 'Submit your entry to enter the draw.',
