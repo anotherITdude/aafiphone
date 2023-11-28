@@ -47,23 +47,28 @@ const Navbar = () => {
         transition={{ duration: 1 }}
         className="font-neosans-medium uppercase flex justify-center items-center gap-[3px]"
       >
-        <div className={`${locale === "/ar" ? "pr-4" : ""}`}>
-          <select
-            className={` 
-            bg-webLiterGray w-[150px] pt-3 pb-3
-            border-b-[0.5px] border-webWhite text-md text-webGray
-            font-DIN-Bold outline-none
-            ${locale === "/" ? "pl-0" : "pr-0"}
-            `}
-            value={selectedLanguage}
-            onChange={handleLanguageChange}
-          >
-            {locales.map((lang) => (
-              <option className="" key={lang} value={lang}>
-                {lang === "ar" ? "Arabic" : "English"}
-              </option>
-            ))}
-          </select>
+        <div
+          className={`${locale === "/" ? "md:pr-4 mt-10" : "p-6 md:pl-4 mt-10"}`}
+        >
+          {locales.map((lang, index) => (
+            <React.Fragment key={lang}>
+              <Link
+                href={lang === "en" ? "/" : `/${lang}`}
+                className={`${
+                  locale === `/${lang}` || (locale === "/" && lang === "en")
+                    ? "text-gray-500 cursor-not-allowed underline underline-offset-4 font-Gotham-Medium"
+                    : "text-red-800 cursor-pointer font-Gotham-Medium "
+                }`}
+              >
+                {lang === "ar" ? "Ar" : "En"}
+              </Link>
+              {index !== locales.length - 1 && (
+                <span className="font-DIN-Bold pr-1 pl-1 text-md ">
+                  &#x2022;
+                </span>
+              )}
+            </React.Fragment>
+          ))}
         </div>
       </motion.div>
       <motion.div className="pt-4 pr-4 ">

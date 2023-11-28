@@ -40,7 +40,7 @@ const HowToEnter = () => {
   return (
     <div
       className="howtoenter
-    bg-right bg-cover bg-no-repeat
+     bg-cover bg-no-repeat
     h-full 
     md:bg-cover md:h-full
     flex flex-col overflow-hidden"
@@ -61,7 +61,7 @@ const HowToEnter = () => {
                 ${
                   locale === "/"
                     ? "font-DIN-Bold text-5xl md:text-5xl pl-0"
-                    : "font-DINArabic-Black text-5xl md:text-6xl pr-4 mt-10 mb-10 md:mt-0"
+                    : "font-DINArabic-Black text-4xl md:text-6xl pr-4 mt-10 mb-10 md:mt-0"
                 }`}
               >
                 {t.How_to_enter}

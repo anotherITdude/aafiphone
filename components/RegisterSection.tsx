@@ -36,7 +36,7 @@ const RegisterSection: React.FC<RegisterSectionInterface> = ({
 
   const locale = usePathname();
   const t = locale === "/" ? en : ar;
-
+  
   return (
     <div id="register">
       <div className="flex flex-col md:flex-row justify-evenly ">

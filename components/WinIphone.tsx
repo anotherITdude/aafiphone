@@ -33,7 +33,7 @@ const WinIphone = () => {
     <div>
       <div
         className="winiphone_mobile md:winiphone
-    bg-left bg-cover bg-no-repeat
+     bg-contain bg-no-repeat
     h-[600px] 
     md:bg-cover md:h-[495px] lg:h-[591px]
     flex flex-col overflow-hidden"

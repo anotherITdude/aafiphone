@@ -38,7 +38,7 @@ const LuckyWinner = () => {
     <div>
       <div
         className="luckyWinner_mobile md:luckyWinner
-    bg-right bg-cover bg-no-repeat
+    bg-cover bg-no-repeat
     h-[600px] 
     md:bg-cover md:h-[495px] lg:h-[591px]
     flex flex-col overflow-hidden"

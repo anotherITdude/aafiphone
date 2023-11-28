@@ -44,7 +44,7 @@ const RegistrationForm = () => {
       emirate: "",
       eid: "",
       receipt: "",
-      lan: "en",
+      lan: locale === "/" ? 'en' : 'ar',
       selected: false,
       info: " ",
     },
@@ -89,7 +89,6 @@ const RegistrationForm = () => {
       toast.dismiss(toastStatus);
     }
   };
-
   return (
     <div
       id="register"
@@ -104,7 +103,7 @@ const RegistrationForm = () => {
           ${
             locale === "/"
               ? "font-DIN-Bold text-5xl md:text-5xl pl-4"
-              : "font-DINArabic-Black text-5xl md:text-6xl pr-4"
+              : "font-DINArabic-Black text-4xl md:text-6xl pr-4"
           }
           `}
           >
