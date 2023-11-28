@@ -31,7 +31,7 @@ const HowToEnter = () => {
   
   const how_to_card =
     locale === "/"
-      ? "howtocard font-DIN-Bold"
+      ? "howtocard font-DIN"
       : "howtocard font-HelveticaNeueLTArabic-Roman";
   
   
@@ -86,7 +86,7 @@ const HowToEnter = () => {
                 className={`text-xs mt-8 text-webGray leading-6
               ${
                 locale === "/"
-                  ? "font-DIN-Bold"
+                  ? "font-DIN-Regular"
                   : "font-HelveticaNeueLTArabic-Roman"
               }`}
               >

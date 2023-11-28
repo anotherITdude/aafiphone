@@ -8,18 +8,18 @@ const translations = {
   'register_now': 'Register Now',
   //Win Iphone Section
   'win_iphone': 'Win iPhone',
-  'pro_15_max': '15PRO MAX',
+  'pro_15_max': '15 PRO MAX',
   //How to enter section
   'How_to_enter': 'How to Enter',
   'step_1': 'STEP 1',
   'step_2': 'STEP 2',
   'step_3': 'STEP 3',
   'step_4': 'STEP 4',
-  'step_1_content': 'Purchase Al Ain Farms FRESH CHICKEN, FRESH MILK, LONG LIFE MILK, FRUIT MIX, FRESH EGGS, or FRESH YOGURT that have promotional QR Code on them.',
+  'step_1_content': 'Purchase Al Ain Farms FRESH CHICKEN, FRESH MILK, LONG LIFE MILK, JUICE, FRESH EGGS, or FRESH YOGURT that have promotional QR Code on them.',
   'step_2_content': 'Scan the QR Code using your Smartphone or Tablet.',
   'step_3_content': 'Register on the microsite after scanning the QR Code & upload the Purchase Receipt.',
   'step_4_content': 'Submit your entry to enter the draw.',
-  'disclaimer': '* This promotion is valid on select Al Ain Farms products. Products include: Fresh Chicken, Fresh Milk, Long Life Milk, Fruit Mix, Fresh Eggs, or Fresh Yoghurt. Head to your nearest Lulu stores to participate!',
+  'disclaimer': '* This promotion is valid on select Al Ain Farms products. Products include: Fresh Chicken, Fresh Milk, Long Life Milk, Juice, Fresh Eggs, or Fresh Yoghurt. Head to your nearest Lulu stores to participate!',
   //Register Section
   'registration': 'Registration',
   'only_at': 'ONLY AT',
@@ -47,10 +47,10 @@ const translations = {
   //Terms and conditions
   'terms_heading': '*Terms and Conditions',
   'terms1': 'The competition is open only to UAE residents above 18 years of age with a valid Emirates ID.',
-  'terms2': 'To enter the promotion, participants have to purchase Al Ain Farms Fresh Chicken, Fresh Milk, Long Life Milk, Fruit Mix, Fresh Eggs, or Fresh Yoghurt that have promotional QR code on them.',
+  'terms2': 'To enter the promotion, participants have to purchase Al Ain Farms Fresh Chicken, Fresh Milk, Long Life Milk, Juice, Fresh Eggs, or Fresh Yoghurt that have promotional QR code on them.',
   'terms3': 'On the landing page, participants have to enter their name, email, mobile number, Emirate, Emirates ID number and upload a clear photo of the purchase receipt which shows the date and the Al Ain Farms product.',
   'terms4': 'Participants have to register only through the online link which is validated through scanning of the QR code on the product.',
-  'terms5': 'The last date for submission is _____2023. Winners will be announced on _____2023 on the Al Ain Farms Social Media and individually contacted for prize collection.',
+  'terms5': 'The last date for submission is 9th December 2023. Winners will be announced on 25th December 2023 on Al Ain Farms Social Media and individually contacted for prize collection.',
   'terms6': 'Selection of winners will be at the sole discretion of Al Ain Farms management and all decisions will be final and binding'
 };
 export default translations;

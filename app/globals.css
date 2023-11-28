@@ -19,6 +19,23 @@ body {
 }
 
 @font-face {
+  font-family: "DIN-Regular";
+  src: url("../Fonts/DIN2014-Regular.ttf");
+}
+
+@font-face {
+  font-family: "DIN";
+  src: url("../Fonts/D-DIN.ttf");
+}
+@font-face {
+  font-family: "DINDemi";
+  src: url("../Fonts/DIN\ 2014\ Demi.ttf");
+}
+
+
+
+
+@font-face {
   font-family: "gotham-black";
   src: url("../Fonts/Gotham-Black_1.otf");
 }
@@ -26,7 +43,7 @@ body {
 
 @font-face {
   font-family: "DIN-Bold";
-  src: url("../Fonts/DIN\ Bold.otf");
+  src: url("../Fonts/D-DIN-Bold.ttf");
 }
 
 @font-face {
