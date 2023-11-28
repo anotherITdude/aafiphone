@@ -83,6 +83,9 @@ body {
   .hero {
     background-image: url(./../public/hero.png);
   }
+  .hero_mobile {
+    background-image: url(./../public/hero_mobile.png);
+  }
   .luckyWinner {
     background-image: url(./../public/luckywinner.png);
   }
