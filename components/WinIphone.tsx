@@ -32,7 +32,7 @@ const WinIphone = () => {
   return (
     <div>
       <div
-        className="winiphone
+        className="winiphone_mobile md:winiphone
     bg-left bg-cover bg-no-repeat
     h-[600px] 
     md:bg-cover md:h-[495px] lg:h-[591px]

@@ -9,9 +9,9 @@ const Hero: React.FC<HeroInterface> = ({ title }) => {
   return (
     <div>
       <div
-        className="hero 
+        className="hero_mobile md:hero 
     bg-left bg-cover bg-no-repeat
-    h-[619px] 
+    h-[739px] 
     md:bg-cover md:h-[495px] lg:h-[591px]
     flex flex-col overflow-hidden"
       >

@@ -49,10 +49,12 @@ const Navbar = () => {
       >
         <div className={`${locale === "/ar" ? "pr-4" : ""}`}>
           <select
-            className="pt-3 pb-2 pr-3 
-            bg-webWhite/20 pl-0 w-[150px] 
-            border-b-[0.5px] border-webWhite text-md text-webWhite
-            font-DIN-Bold outline-none"
+            className={` 
+            bg-webLiterGray w-[150px] pt-3 pb-3
+            border-b-[0.5px] border-webWhite text-md text-webGray
+            font-DIN-Bold outline-none
+            ${locale === "/" ? "pl-0" : "pr-0"}
+            `}
             value={selectedLanguage}
             onChange={handleLanguageChange}
           >

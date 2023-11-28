@@ -31,7 +31,7 @@ const HowToEnter = () => {
   
   const how_to_card =
     locale === "/"
-      ? "howtocard font-DIN-Bold"
+      ? "howtocard font-DIN"
       : "howtocard font-HelveticaNeueLTArabic-Roman";
   
   
@@ -86,7 +86,7 @@ const HowToEnter = () => {
                 className={`text-xs mt-8 text-webGray leading-6
               ${
                 locale === "/"
-                  ? "font-DIN-Bold"
+                  ? "font-DIN-Regular"
                   : "font-HelveticaNeueLTArabic-Roman"
               }`}
               >
@@ -97,7 +97,7 @@ const HowToEnter = () => {
           <motion.div
             {...motionSettingsImage}
             className={`w-[400px] md:min-w-[500px] mt-6 md:mt-0 
-            ${locale === "/" ? "mr-6" : "ml-2"}
+            ${locale === "/" ? "mr-6" : "ml-2 pt-10"}
             `}
           >
             <Image alt="how to enter" src={howto_right} />

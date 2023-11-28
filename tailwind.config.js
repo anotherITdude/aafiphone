@@ -20,16 +20,20 @@ module.exports = {
       webWhite: "#ffffff",
       webRed: "#E2211C",
       webGray: "#3F4040",
-      webLiteGray: "#717171"
+      webLiteGray: "#717171",
+      webLiterGray: "#cccccc"
     },
     fontFamily: {
       "DINCondensed-Bold": ["DINCondensed-Bold"],
       "DIN-Bold": ["DIN-Bold"],
       "gotham-black-italic": ["gotham-black-italic"],
       "neosans-bold": ["neosans-bold"],
+      "DIN-Regular": ["DIN-Regular"],
       "neosans-medium": ["neosans-medium"],
       "DINArabic-Black": ["DINArabic-Black"],
       "DINArabic-CondBlack": ["DINArabic-CondBlack"],
+      "Din": ["Din"],
+      "DINDemi": ["DINDemi"],
       "circularStd": ["circularStd"],
       "DINArabic-CondBold": ["DINArabic-CondBold"],
       "helvetica-neue-lt-arabic-75-bol": ["helvetica-neue-lt-arabic-75-bol"],
