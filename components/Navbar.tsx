@@ -40,15 +40,18 @@ const Navbar = () => {
 
   // Return JSX for the Navbar component
   return (
-    <motion.nav className="flex justify-between pl-4">
+    <motion.nav className={`
+    flex  justify-between pl-4
+    ${locale === "/" ? "" : "flex-row-reverse"}
+    `}>
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="font-neosans-medium uppercase flex justify-center items-center gap-[3px]"
+        className="font-neosans-medium uppercase flex  justify-center items-center gap-[3px]"
       >
         <div
-          className={`${locale === "/" ? "md:pr-4 mt-10" : "p-6 md:pl-4 mt-10"}`}
+          className={`${locale === "/" ? " pl-4 md:pr-4 mt-10" : "p-6 md:pl-4 mt-10"}`}
         >
           {locales.map((lang, index) => (
             <React.Fragment key={lang}>
