@@ -32,7 +32,10 @@ body {
   src: url("../Fonts/DIN\ 2014\ Demi.ttf");
 }
 
-
+@font-face {
+  font-family: "Gotham-Medium";
+  src: url("../Fonts/Gotham-Medium_5.otf");
+}
 
 
 @font-face {

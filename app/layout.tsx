@@ -1,3 +1,4 @@
+import { ToasterProvider } from '@/providers/toast-provider';
 import type { Metadata } from 'next'
 import './globals.css'
 
@@ -15,7 +16,9 @@ export default function RootLayout({
   return (
     <html lang="en" className="font-al">
       <link rel="icon" href="../public/favicon.png" />
-      <body className="">{children}</body>
+      <body className="">
+      <ToasterProvider />
+        {children}</body>
     </html>
   );
 }

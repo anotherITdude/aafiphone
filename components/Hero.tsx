@@ -10,7 +10,7 @@ const Hero: React.FC<HeroInterface> = ({ title }) => {
     <div>
       <div
         className="hero_mobile md:hero 
-    bg-left bg-cover bg-no-repeat
+    bg-left bg-contain bg-no-repeat
     h-[739px] 
     md:bg-cover md:h-[495px] lg:h-[591px]
     flex flex-col overflow-hidden"

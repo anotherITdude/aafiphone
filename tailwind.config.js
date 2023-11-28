@@ -34,6 +34,7 @@ module.exports = {
       "DINArabic-CondBlack": ["DINArabic-CondBlack"],
       "Din": ["Din"],
       "DINDemi": ["DINDemi"],
+      "Gotham-Medium" :["Gotham-Medium"],
       "circularStd": ["circularStd"],
       "DINArabic-CondBold": ["DINArabic-CondBold"],
       "helvetica-neue-lt-arabic-75-bol": ["helvetica-neue-lt-arabic-75-bol"],
