@@ -106,6 +106,12 @@ body {
   .hero_mobile {
     background-image: url(./../public/hero_mobile.png);
   }
+  .hero_ar {
+    background-image: url(./../public/hero_ar.png);
+  }
+  .hero_mobile_ar {
+    background-image: url(./../public/hero_mobile_ar.png);
+  }
   .luckyWinner {
     background-image: url(./../public/luckywinner.png);
   }
