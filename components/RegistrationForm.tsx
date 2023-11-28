@@ -128,7 +128,7 @@ const RegistrationForm = () => {
                 disabled={isLoading}
                 register={register}
                 errors={errors}
-                type="number"
+                type="text"
               />
             </div>
             <div className="form-field">
@@ -158,7 +158,7 @@ const RegistrationForm = () => {
                 disabled={isLoading}
                 register={register}
                 errors={errors}
-                type="number"
+                type="text"
               />
             </div>
             <div className="form-field">
